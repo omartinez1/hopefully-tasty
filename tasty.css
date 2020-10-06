@@ -11,14 +11,18 @@ body {
 
 #header {
     height: var(--header-height);
+    width: 100%;
     text-align: center;
     background: #546D64;
     color: white;
     font-size: 20px;
     position:absolute;
-    left:0;
-    top:0;
-    right:0;
+    top: 0;
+    left: 0;
+    
+    animation-name: expand-header;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
 }
 
 #header img {
@@ -27,26 +31,18 @@ body {
 
 /* The sidebar menu */
 #sidenav {
-    top: var(--header-height);
     height: 100%; /* Full-height: remove this if you want "auto" height */
     width: var(--sidenav-width); /* Set the width of the sidebar */
     position: fixed;
-    left: 0;
     background-color: #A9BCD0;
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 10px;
+    top: var(--header-height);
+    left: 0;
+    
     animation-name: expand-sidenav;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
     animation-timing-function: ease-out;
-}
-
-@keyframes expand-sidenav {
-    0% {
-        left: calc(-1 * var(--sidenav-width));
-    }
-    100% {
-        left: 0; 
-    }
 }
   
 /* The navigation menu links */
@@ -56,6 +52,8 @@ body {
     font-size: 25px;
     color: #818181;
     display: block;
+    transition-property: all;
+    transition-duration: 0.5s;
 }
   
 /* When you mouse over the navigation links, change their color */
@@ -67,10 +65,48 @@ body {
 #main-body {
     padding-left: var(--sidenav-width); /* Same as the width of the sidebar */
     padding-top: var(--header-height);
+    
+    animation-name: reveal-main-body;
+    animation-duration: 1.25s;
+    animation-timing-function: ease-out;
 }
   
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+}
+
+@keyframes expand-header {
+    0% {
+        top: calc(-1 * var(--header-height));
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes expand-sidenav {
+    0% {
+        left: calc(-1 * var(--sidenav-width));
+    }
+    50% {
+        left: calc(-1 * var(--sidenav-width));
+    }
+    100% {
+        left: 0; 
+    }
+}
+
+@keyframes reveal-main-body {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100 {
+        opacity: 1;
+    }
+    
 }
