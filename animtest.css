@@ -1,0 +1,15 @@
+#oven {
+    width: 800px;
+    height: 800px;
+    background: url(pizza/oven_sprite_test.png) left center;
+    background-size: cover;
+    animation: play-anim 1s steps(2) infinite;
+    animation-play-state: paused;
+    display: inline-block;
+}
+#oven:hover {
+   animation-play-state: running;
+}
+@keyframes play-anim {
+    100% {background-position: -1600px;}
+}
