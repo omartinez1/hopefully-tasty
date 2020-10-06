@@ -1,0 +1,172 @@
+#oven {
+    width: 400px;
+    height: 400px;
+    background: url(pizza/oven_sprite_test.png) left center;
+    background-size: cover;
+    animation: play-anim 1s steps(2) infinite;
+    animation-play-state: paused;
+    display: inline-block;
+}
+#oven:hover {
+   animation-play-state: running;
+}
+
+@keyframes play-anim {
+    100% {background-position: -800px;}
+}
+.stepbox{
+    border:2px solid gray;
+    padding:20px;
+}
+#step1_1 {
+
+    width: 400px;
+    height: 400px;
+    background: url(pizza/step_one_one_spritesheet.png) left center;
+    background-size: cover;
+    animation: step1_1-anim 2s steps(12) infinite;
+    animation-play-state: paused;
+    display: inline-block;
+}
+#step1_1:hover {
+    animation-play-state: running;
+}
+@keyframes step1_1-anim {
+    100% {background-position: -4800px;}
+}
+
+#step1_2 {
+
+    width: 400px;
+    height: 400px;
+    background: url(pizza/step_one_two_spritesheet.png) left center;
+    background-size: cover;
+    animation: step1_2-anim 2s steps(5) infinite;
+    animation-play-state: paused;
+    display: inline-block;
+}
+#step1_2:hover {
+    animation-play-state: running;
+}
+@keyframes step1_2-anim {
+    100% {background-position: -2000px;}
+}
+
+#step1_3 {
+
+    width: 400px;
+    height: 400px;
+    background: url(pizza/step_one_three_spritesheet.png) left center;
+    background-size: cover;
+    animation: step1_3-anim 2s steps(5) infinite;
+    animation-play-state: paused;
+    display: inline-block;
+}
+#step1_3:hover {
+    animation-play-state: running;
+}
+@keyframes step1_3-anim {
+    100% {background-position: -2000px;}
+}
+
+#step2_1 {
+
+    width: 400px;
+    height: 400px;
+    background: url(pizza/step_two_one_spritesheet.png) left center;
+    background-size: cover;
+    animation: step2_1-anim 2s steps(6) infinite;
+    animation-play-state: paused;
+    display: inline-block;
+}
+#step2_1:hover {
+    animation-play-state: running;
+}
+@keyframes step2_1-anim {
+    100% {background-position: -2400px;}
+}
+
+#step2_2 {
+
+    width: 400px;
+    height: 400px;
+    background: url(pizza/step_two_two_spritesheet.png) left center;
+    background-size: cover;
+    animation: step2_2-anim 2s steps(2) infinite;
+    animation-play-state: paused;
+    display: inline-block;
+}
+#step2_2:hover {
+    animation-play-state: running;
+}
+@keyframes step2_2-anim {
+    100% {background-position: -800px;}
+}
+
+#step2_3 {
+
+    width: 400px;
+    height: 400px;
+    background: url(pizza/step_two_three_spritesheet.png) left center;
+    background-size: cover;
+    animation: step2_3-anim 1s steps(2) infinite;
+    animation-play-state: paused;
+    display: inline-block;
+}
+#step2_3:hover {
+    animation-play-state: running;
+}
+@keyframes step2_3-anim {
+    100% {background-position: -800px;}
+}
+
+#step3_1 {
+
+    width: 400px;
+    height: 400px;
+    background: url(pizza/step_three_one_spritesheet.png) left center;
+    background-size: cover;
+    animation: step3_1-anim 2s steps(8) infinite;
+    animation-play-state: paused;
+    display: inline-block;
+}
+#step3_1:hover {
+    animation-play-state: running;
+}
+@keyframes step3_1-anim {
+    100% {background-position: -3200px;}
+}
+
+#step3_2 {
+
+    width: 400px;
+    height: 400px;
+    background: url(pizza/step_three_two_spritesheet.png) left center;
+    background-size: cover;
+    animation: step3_2-anim 1s steps(2) infinite;
+    animation-play-state: paused;
+    display: inline-block;
+}
+#step3_2:hover {
+    animation-play-state: running;
+}
+@keyframes step3_2-anim {
+    100% {background-position: -800px;}
+}
+
+#step3_3 {
+
+    width: 800px;
+    height: 400px;
+    background: url(pizza/step_three_three_spritesheet.png) left center;
+    background-size: cover;
+    animation: step3_3-anim 2s steps(2) infinite;
+    animation-play-state: paused;
+    display: inline-block;
+}
+#step3_3:hover {
+    animation-play-state: running;
+}
+@keyframes step3_3-anim {
+    100% {background-position: -1600px;}
+}
