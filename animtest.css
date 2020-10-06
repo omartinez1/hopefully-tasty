@@ -1,6 +1,6 @@
 #oven {
-    width: 800px;
-    height: 800px;
+    width: 400px;
+    height: 400px;
     background: url(pizza/oven_sprite_test.png) left center;
     background-size: cover;
     animation: play-anim 1s steps(2) infinite;
@@ -10,6 +10,24 @@
 #oven:hover {
    animation-play-state: running;
 }
+
 @keyframes play-anim {
-    100% {background-position: -1600px;}
+    100% {background-position: -800px;}
+}
+
+#step1 {
+
+    width: 400px;
+    height: 400px;
+    background: url(pizza/step_one_spritesheet.png) left center;
+    background-size: cover;
+    animation: step1-anim 2s steps(12) infinite;
+    animation-play-state: paused;
+    display: inline-block;
+}
+#step1:hover {
+    animation-play-state: running;
+}
+@keyframes step1-anim {
+    100% {background-position: -4800px;}
 }
