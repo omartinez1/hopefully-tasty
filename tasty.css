@@ -60,7 +60,7 @@ body {
     z-index: 1; /* Stay on top */
     top: 0;
     left: 0;   
-    bottom: 0;;
+    bottom: 0;
     animation-name: expand-sidenav;
     animation-duration: 1s;
     animation-timing-function: ease-out;
