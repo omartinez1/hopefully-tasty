@@ -24,6 +24,9 @@
     height: 40px;
     animation: roll_over 1s infinite;
 }
+#ingredients {
+    font-size: 20px;
+}
 
 /*make that pizza roll*/
 @keyframes roll_over {
