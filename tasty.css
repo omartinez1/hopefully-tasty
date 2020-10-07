@@ -31,15 +31,15 @@ body {
 
 /* The sidebar menu */
 #sidenav {
-    height: 100%; /* Full-height: remove this if you want "auto" height */
+    height: 345%; 
     width: var(--sidenav-width); /* Set the width of the sidebar */
-    position: fixed;
+    position: absolute;
     background-color: #A9BCD0;
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 10px;
+    z-index: 1; /* Stay on top */
     top: var(--header-height);
-    left: 0;
-    
+    left: 0;   
     animation-name: expand-sidenav;
     animation-duration: 1s;
     animation-timing-function: ease-out;
@@ -47,10 +47,10 @@ body {
   
 /* The navigation menu links */
 #sidenav a {
-    padding: 6px 8px 6px 16px;
+    padding: 40px 8px 40px 8px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: black;
     display: block;
     transition-property: all;
     transition-duration: 0.5s;
