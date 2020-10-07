@@ -11,17 +11,17 @@ body {
 
 #header {
     height: var(--header-height);
-    width: 100%;
+    width: calc(100% - var(--sidenav-width));
     text-align: center;
     background: #546D64;
     color: white;
     font-size: 20px;
     position:absolute;
     top: 0;
-    left: 0;
+    left: var(--sidenav-width);
     
     animation-name: expand-header;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
     animation-timing-function: ease-out;
 }
 
@@ -62,7 +62,7 @@ body {
     left: 0;   
     bottom: 0;
     animation-name: expand-sidenav;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-timing-function: ease-out;
 }
   
@@ -119,6 +119,9 @@ body {
     0% {
         top: calc(-1 * var(--header-height));
     }
+    50% {
+        top: calc(-1 * var(--header-height));
+    }
     100% {
         top: 0;
     }
@@ -126,9 +129,6 @@ body {
 
 @keyframes expand-sidenav {
     0% {
-        left: calc(-1 * var(--sidenav-width));
-    }
-    50% {
         left: calc(-1 * var(--sidenav-width));
     }
     100% {
