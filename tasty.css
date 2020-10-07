@@ -52,15 +52,15 @@ body {
 
 /* The sidebar menu */
 #sidenav {
-    height: 345%; 
     width: var(--sidenav-width); /* Set the width of the sidebar */
-    position: absolute;
+    position: fixed;
     background-color: #A9BCD0;
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 10px;
     z-index: 1; /* Stay on top */
-    top: var(--header-height);
+    top: 0;
     left: 0;   
+    bottom: 0;;
     animation-name: expand-sidenav;
     animation-duration: 1s;
     animation-timing-function: ease-out;
